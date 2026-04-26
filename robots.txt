@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ufaqtech.github.io/awais.github.io/sitemap.xml

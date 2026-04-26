@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{UPDATE_TITLE}} | News</title>
+    <link rel="canonical">
+    <link rel="manifest">
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" /> href="/manifest.json" /> href="https://ufaqtech.github.io/awais.github.io/news/update-template.html" />
+    <meta name="description" content="{{UPDATE_EXCERPT}}" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li class="nav-dropdown"><a href="#">Content</a><ul class="dropdown-menu"><li><a href="../blog/">Blog</a></li><li><a href="./">News</a></li></ul></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../links/">Links</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section style="padding: 100px var(--spacing-md) 60px; background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(0, 212, 255, 0.1));">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">News</span>
+                <h1>{{UPDATE_TITLE}}</h1>
+                <p class="description">{{UPDATE_DESCRIPTION}}</p>
+                <div class="card-meta" style="justify-content:center; gap:1rem; margin-top: var(--spacing-md);">
+                    <span>{{UPDATE_DATE}}</span>
+                    <span>{{UPDATE_CATEGORY}}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="max-width: 900px;">
+            <img loading="lazy" src="{{UPDATE_IMAGE}}" alt="{{UPDATE_TITLE}}" style="width:100%; border-radius: var(--radius-xl); margin-bottom: var(--spacing-2xl);" />
+
+            <div class="card" style="padding: var(--spacing-2xl);">
+                {{UPDATE_CONTENT}}
+            </div>
+
+            <div class="grid grid-2" style="margin-top: var(--spacing-2xl); gap: var(--spacing-lg);">
+                <a href="{{PREVIOUS_UPDATE_URL}}" class="card btn btn-secondary" style="display:flex; align-items:center; justify-content:center; min-height: 120px;">{{PREVIOUS_UPDATE_TEXT}}</a>
+                <a href="{{NEXT_UPDATE_URL}}" class="card btn btn-primary" style="display:flex; align-items:center; justify-content:center; min-height: 120px;">{{NEXT_UPDATE_TEXT}}</a>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-2xl); text-align:center;">
+                <h2>{{UPDATE_CTA_TEXT}}</h2>
+                <a href="{{UPDATE_CTA_URL}}" class="btn btn-primary">{{UPDATE_CTA_BUTTON}}</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 UfaqTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

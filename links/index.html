@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links | Awais Nawaz - Creator, Developer & Lead at UfaqTech</title>
+    <meta name="description" content="Find all important links from Awais Nawaz, Creator, Developer & Lead at UfaqTech - portfolio, blog, social media, and more." />
+    <meta name="keywords" content="links, UfaqTech, Awais Nawaz, social media, portfolio" />
+    <link rel="canonical" href="https://ufaqtech.github.io/awais.github.io/links/" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Links | Awais Nawaz - Creator, Developer & Lead at UfaqTech" />
+    <meta property="og:description" content="Find all important links from Awais Nawaz, Creator, Developer & Lead at UfaqTech - portfolio, blog, social media, and more." />
+    <meta property="og:url" content="https://ufaqtech.github.io/awais.github.io/links/" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .links-page { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: var(--spacing-2xl) var(--spacing-md); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 50%, #2d1b69 100%); }
+        .links-header { text-align: center; margin-bottom: var(--spacing-2xl); }
+        .links-header h1 { font-size: 2.5rem; margin-bottom: var(--spacing-sm); }
+        .links-header p { color: rgba(241, 245, 249, 0.7); }
+        .links-container { width: 100%; max-width: 600px; }
+        .link-item { background: rgba(30, 41, 59, 0.5); border: 2px solid rgba(0, 212, 255, 0.2); border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); cursor: pointer; transition: all 0.3s ease; display: block; text-decoration: none; color: white; }
+        .link-item:hover { background: rgba(30, 41, 59, 0.8); border-color: rgba(0, 212, 255, 0.4); transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .link-item.featured { border: 2px solid var(--primary); box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+        .link-icon { font-size: 2rem; margin-right: var(--spacing-md); display: inline-block; }
+        .link-content { display: flex; align-items: center; }
+        .link-text h3 { margin: 0; font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .link-text p { margin: 0; font-size: 0.9rem; color: rgba(241, 245, 249, 0.6); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR (minimal) -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <section class="links-page">
+        <div class="links-container">
+            <div class="links-header">
+                <h1>Awais Nawaz</h1>
+                <p>Creator, Developer & Lead at UfaqTech</p>
+            </div>
+
+            <div id="linksContainer"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER (minimal) -->
+    <footer style="text-align: center; padding: var(--spacing-lg); background: rgba(3, 7, 18, 0.8); border-top: 1px solid rgba(0, 212, 255, 0.1);">
+        <p style="color: rgba(241, 245, 249, 0.6); margin: 0;">&copy; 2026 UfaqTech. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        async function loadLinks() {
+            try {
+                const response = await fetch('../data/links.json');
+                const links = await response.json();
+                const container = document.getElementById('linksContainer');
+                
+                // Separate featured and non-featured links
+                const featured = links.filter(l => l.featured);
+                const others = links.filter(l => !l.featured);
+                
+                let html = '';
+                
+                // Add featured links
+                featured.forEach((link, index) => {
+                    html += `
+                        <a href="${link.url}" target="_blank" class="link-item featured animate-fade" style="animation-delay: ${index * 0.1}s">
+                            <div class="link-content">
+                                <span class="link-icon">${link.icon}</span>
+                                <div class="link-text">
+                                    <h3>${link.title}</h3>
+                                    <p>${link.description}</p>
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                });
+                
+                // Add separator if there are non-featured links
+                if (others.length > 0) {
+                    html += '<div style="text-align: center; margin: var(--spacing-lg) 0; color: var(--gray); font-size: 0.9rem;">More Links</div>';
+                }
+                
+                // Add other links
+                others.forEach((link, index) => {
+                    html += `
+                        <a href="${link.url}" target="_blank" class="link-item animate-fade" style="animation-delay: ${(featured.length + index) * 0.1}s">
+                            <div class="link-content">
+                                <span class="link-icon">${link.icon}</span>
+                                <div class="link-text">
+                                    <h3>${link.title}</h3>
+                                    <p>${link.description}</p>
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                });
+                
+                container.innerHTML = html;
+            } catch (error) {
+                console.error('Error loading links:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadLinks);
+    </script>
+</body>
+</html>
+
+
+

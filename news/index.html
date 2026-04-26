@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Awais Nawaz - Creator, Developer & Lead at UfaqTech</title>
+    <meta name="description" content="Stay updated with the latest news, announcements, and updates from Awais Nawaz, Creator, Developer & Lead at UfaqTech." />
+    <meta name="keywords" content="news, updates, UfaqTech, Awais Nawaz, announcements" />
+    <link rel="canonical" href="https://ufaqtech.github.io/awais.github.io/news/" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="News | Awais Nawaz - Creator, Developer & Lead at UfaqTech" />
+    <meta property="og:description" content="Stay updated with the latest news, announcements, and updates from Awais Nawaz, Creator, Developer & Lead at UfaqTech." />
+    <meta property="og:url" content="https://ufaqtech.github.io/awais.github.io/news/" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .news-header { padding: 100px 0 var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%); }
+        .filter-buttons { display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-2xl); justify-content: center; }
+        .filter-btn { padding: 0.5rem 1.5rem; border: 2px solid var(--primary); background: transparent; color: var(--primary); border-radius: var(--radius-full); cursor: pointer; transition: all 0.3s ease; font-weight: 600; }
+        .filter-btn.active { background: var(--primary); color: var(--darker); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li class="nav-dropdown"><a href="#">Content</a><ul class="dropdown-menu"><li><a href="../blog/">Blog</a></li><li><a href="./" class="active">News</a></li></ul></li>
+                <li><a href="../links/">Links</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="news-header">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Stay Updated</span>
+                <h1>Latest News & Updates</h1>
+                <p class="description">Follow the latest announcements and news about my projects and UfaqTech</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTERS -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter-news="all">All News</button>
+                <button class="filter-btn" data-filter-news="Product Launch">Product Launch</button>
+                <button class="filter-btn" data-filter-news="Recognition">Recognition</button>
+                <button class="filter-btn" data-filter-news="Partnership">Partnership</button>
+                <button class="filter-btn" data-filter-news="Community">Community</button>
+            </div>
+
+            <!-- NEWS GRID -->
+            <div class="grid grid-3" id="newsGrid"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Awais Nawaz</h3>
+                    <p>Creator, Developer & Lead</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="./">News</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/news.js"></script>
+</body>
+</html>
+
+
+

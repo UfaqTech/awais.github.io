@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "AI-Powered Analytics Platform",
+    "category": "Web Application",
+    "description": "A comprehensive analytics platform powered by machine learning algorithms to provide real-time insights and predictive analytics for business data.",
+    "image": "https://picsum.photos/600/400?random=1",
+    "thumbnail": "https://picsum.photos/300/200?random=1",
+    "technologies": ["React", "Node.js", "TensorFlow", "MongoDB"],
+    "link": "/projects/project-1.html",
+    "featured": true,
+    "date": "2024-01-15",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "title": "Mobile App for Fitness Tracking",
+    "category": "Mobile Development",
+    "description": "A feature-rich mobile application that tracks workouts, nutrition, and provides personalized fitness recommendations using AI.",
+    "image": "https://picsum.photos/600/400?random=2",
+    "thumbnail": "https://picsum.photos/300/200?random=2",
+    "technologies": ["React Native", "Firebase", "Machine Learning"],
+    "link": "/projects/project-2.html",
+    "featured": true,
+    "date": "2023-12-20",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce Platform Redesign",
+    "category": "Web Design & Development",
+    "description": "Complete redesign and rebuild of an e-commerce platform with improved UX, faster performance, and seamless payment integration.",
+    "image": "https://picsum.photos/600/400?random=3",
+    "thumbnail": "https://picsum.photos/300/200?random=3",
+    "technologies": ["Next.js", "Tailwind CSS", "Stripe API", "PostgreSQL"],
+    "link": "/projects/project-3.html",
+    "featured": false,
+    "date": "2023-11-10",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "title": "Real-Time Collaboration Tool",
+    "category": "Web Application",
+    "description": "A web-based tool for team collaboration with real-time editing, video conferencing, and project management features.",
+    "image": "https://picsum.photos/600/400?random=4",
+    "thumbnail": "https://picsum.photos/300/200?random=4",
+    "technologies": ["Vue.js", "WebSocket", "FFmpeg", "Redis"],
+    "link": "/projects/project-4.html",
+    "featured": true,
+    "date": "2023-10-05",
+    "status": "Ongoing"
+  },
+  {
+    "id": 5,
+    "title": "IoT Monitoring Dashboard",
+    "category": "IoT & Embedded",
+    "description": "A comprehensive dashboard for monitoring and controlling IoT devices with real-time data visualization and alerts.",
+    "image": "https://picsum.photos/600/400?random=5",
+    "thumbnail": "https://picsum.photos/300/200?random=5",
+    "technologies": ["Angular", "Python", "MQTT", "InfluxDB"],
+    "link": "/projects/project-5.html",
+    "featured": false,
+    "date": "2023-09-18",
+    "status": "Completed"
+  }
+]

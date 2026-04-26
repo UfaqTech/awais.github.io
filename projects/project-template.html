@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{PROJECT_TITLE}} | Awais Nawaz Projects</title>
+    <link rel="canonical">
+    <link rel="manifest">
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" /> href="/manifest.json" /> href="https://ufaqtech.github.io/awais.github.io/projects/project-template.html" />
+    <meta name="description" content="{{PROJECT_DESCRIPTION}}" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li class="nav-dropdown"><a href="#">Work</a><ul class="dropdown-menu"><li><a href="./">Projects</a></li><li><a href="../portfolio.html">Portfolio</a></li></ul></li>
+                <li class="nav-dropdown"><a href="#">Content</a><ul class="dropdown-menu"><li><a href="../blog/">Blog</a></li><li><a href="../news/">News</a></li></ul></li>
+                <li><a href="../links/">Links</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section style="padding: 100px var(--spacing-md) 60px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(168, 85, 247, 0.1));">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Case Study</span>
+                <h1>{{PROJECT_TITLE}}</h1>
+                <p class="description">{{PROJECT_DESCRIPTION}}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <div class="card">
+                        <img loading="lazy" src="{{PROJECT_IMAGE}}" alt="{{PROJECT_TITLE}}" style="width:100%; border-radius: var(--radius-lg);" />
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="padding: var(--spacing-2xl);">
+                        <h2>Project Overview</h2>
+                        <p>{{PROJECT_OVERVIEW}}</p>
+                        <div style="margin-top: var(--spacing-lg);">
+                            <p><strong>Category:</strong> {{PROJECT_CATEGORY}}</p>
+                            <p><strong>Status:</strong> {{PROJECT_STATUS}}</p>
+                            <p><strong>Date:</strong> {{PROJECT_DATE}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-3" style="margin-top: var(--spacing-2xl); gap: var(--spacing-lg);">
+                <div class="card">
+                    <h3>Challenge</h3>
+                    <p>{{PROJECT_CHALLENGE}}</p>
+                </div>
+                <div class="card">
+                    <h3>Solution</h3>
+                    <p>{{PROJECT_SOLUTION}}</p>
+                </div>
+                <div class="card">
+                    <h3>Impact</h3>
+                    <p>{{PROJECT_IMPACT}}</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-2xl);">
+                <h2>Technologies Used</h2>
+                <div class="tags" style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top: var(--spacing-md);">
+                    {{PROJECT_TECHNOLOGIES}}
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-2xl);">
+                <h2>Features Delivered</h2>
+                <ul style="margin-left: var(--spacing-lg); line-height: 1.8;">
+                    {{PROJECT_FEATURES}}
+                </ul>
+            </div>
+
+            <div class="grid grid-2" style="margin-top: var(--spacing-2xl); align-items: stretch; gap: var(--spacing-lg);">
+                <a href="{{PREVIOUS_PROJECT_URL}}" class="card btn btn-secondary" style="display:flex; align-items:center; justify-content:center; min-height: 140px;">{{PREVIOUS_PROJECT_TEXT}}</a>
+                <a href="{{NEXT_PROJECT_URL}}" class="card btn btn-primary" style="display:flex; align-items:center; justify-content:center; min-height: 140px;">{{NEXT_PROJECT_TEXT}}</a>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-2xl); text-align:center;">
+                <h2>{{PROJECT_CTA_TEXT}}</h2>
+                <a href="../pages/contact.html" class="btn btn-primary">{{PROJECT_CTA_BUTTON}}</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 UfaqTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

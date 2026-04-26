@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Awais Nawaz - Creator, Developer & Lead at UfaqTech</title>
+    <meta name="description" content="Contact Awais Nawaz, Creator, Developer & Lead at UfaqTech for project inquiries, collaborations, or to say hello." />
+    <meta name="keywords" content="contact, UfaqTech, Awais Nawaz, web developer, hire" />
+    <link rel="canonical" href="https://ufaqtech.github.io/awais.github.io/pages/contact.html" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Contact | Awais Nawaz - Creator, Developer & Lead at UfaqTech" />
+    <meta property="og:description" content="Contact Awais Nawaz, Creator, Developer & Lead at UfaqTech for project inquiries, collaborations, or to say hello." />
+    <meta property="og:url" content="https://ufaqtech.github.io/awais.github.io/pages/contact.html" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section style="padding: 100px var(--spacing-md) var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="animate-fade">Get in Touch</h1>
+                <p class="description animate-fade delay-200">Have a project in mind or want to collaborate? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-2xl);">
+                <!-- CONTACT FORM -->
+                <div data-animate>
+                    <h2 style="margin-bottom: var(--spacing-lg);">Send Me a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div data-animate class="delay-200">
+                    <h2 style="margin-bottom: var(--spacing-lg);">Other Ways to Reach Me</h2>
+                    
+                    <div class="card" style="margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--primary); margin-bottom: var(--spacing-md);">Email</h3>
+                        <p><a href="mailto:hello@awaisnawaz.com">hello@awaisnawaz.com</a></p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--primary); margin-bottom: var(--spacing-md);">Social Media</h3>
+                        <p>Connect with me on:</p>
+                        <div style="display: flex; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                            <a href="https://github.com" class="social-icon" title="GitHub">🐙</a>
+                            <a href="https://linkedin.com" class="social-icon" title="LinkedIn">💼</a>
+                            <a href="https://twitter.com" class="social-icon" title="Twitter">𝕏</a>
+                            <a href="https://dribbble.com" class="social-icon" title="Dribbble">🎨</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: var(--primary); margin-bottom: var(--spacing-md);">UfaqTech</h3>
+                        <p>For UfaqTech inquiries, visit:</p>
+                        <a href="https://ufaqtech.com" class="btn btn-ghost" style="margin-top: var(--spacing-md);">UfaqTech Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const submitBtn = form.querySelector('button');
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Simulate form submission
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Show success message
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                form.reset();
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+                
+                // Redirect to success page after submission
+                setTimeout(() => {
+                    window.location.href = '/contact-success.html';
+                }, 1200);
+            } catch (error) {
+                alert('Error sending message. Please try again.');
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

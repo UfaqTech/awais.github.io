@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - Awais Nawaz | Find Content</title>
+    <link rel="canonical">
+    <link rel="manifest">
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" /> href="/manifest.json" /> href="https://ufaqtech.github.io/awais.github.io/pages/search.html" />
+    <meta name="description" content="Search through all my blog posts, projects, and content." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .search-container { max-width: 800px; margin: 0 auto; }
+        .search-input { width: 100%; padding: var(--spacing-lg); background: rgba(30, 41, 59, 0.5); border: 2px solid rgba(0, 212, 255, 0.2); border-radius: var(--radius-lg); color: white; font-size: 1.1rem; margin-bottom: var(--spacing-lg); }
+        .search-input:focus { outline: none; border-color: var(--primary); }
+        .search-results { margin-top: var(--spacing-2xl); }
+        .result-item { background: rgba(30, 41, 59, 0.3); border: 1px solid rgba(0, 212, 255, 0.1); border-radius: var(--radius-md); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); transition: all 0.3s ease; }
+        .result-item:hover { background: rgba(30, 41, 59, 0.5); border-color: rgba(0, 212, 255, 0.3); }
+        .result-title { color: var(--primary); margin-bottom: var(--spacing-sm); }
+        .result-meta { font-size: 0.9rem; color: var(--gray); margin-bottom: var(--spacing-sm); }
+        .result-excerpt { line-height: 1.6; }
+        .no-results { text-align: center; padding: var(--spacing-2xl); color: var(--gray); }
+        .search-filters { display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-lg); }
+        .filter-btn { padding: 0.5rem 1rem; border: 2px solid var(--primary); background: transparent; color: var(--primary); border-radius: var(--radius-full); cursor: pointer; transition: all 0.3s ease; }
+        .filter-btn.active { background: var(--primary); color: var(--darker); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section style="padding: 100px var(--spacing-md) var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="animate-fade">Search</h1>
+                <p class="description animate-fade delay-200">Find blog posts, projects, and content across my website.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for articles, projects, or topics..." />
+
+                <div class="search-filters">
+                    <button class="filter-btn active" data-filter="all">All Content</button>
+                    <button class="filter-btn" data-filter="blog">Blog Posts</button>
+                    <button class="filter-btn" data-filter="projects">Projects</button>
+                    <button class="filter-btn" data-filter="news">News</button>
+                </div>
+
+                <div id="searchResults" class="search-results">
+                    <!-- Search results will be populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Simple search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            // Sample data - in a real implementation, this would come from your data files
+            const allContent = [
+                {
+                    type: 'blog',
+                    title: 'The Future of Web Development in 2024',
+                    url: '../blog/post-1.html',
+                    excerpt: 'Explore the emerging trends that will shape modern experiences and development workflows.',
+                    date: 'March 15, 2024',
+                    category: 'Web Development'
+                },
+                {
+                    type: 'blog',
+                    title: 'Mastering React Hooks: A Complete Guide',
+                    url: '../blog/post-2.html',
+                    excerpt: 'Deep dive into React Hooks and build reusable, robust components with modern patterns.',
+                    date: 'March 10, 2024',
+                    category: 'React'
+                },
+                {
+                    type: 'project',
+                    title: 'AI-Powered Analytics Platform',
+                    url: '../projects/project-1.html',
+                    excerpt: 'A comprehensive analytics platform powered by machine learning algorithms.',
+                    date: 'January 15, 2024',
+                    category: 'Web Application'
+                },
+                {
+                    type: 'news',
+                    title: 'UfaqTech Launches New AI-Driven Development Suite',
+                    url: '../news/update-1.html',
+                    excerpt: 'Introducing our latest innovation: an AI-powered development suite.',
+                    date: 'March 20, 2024',
+                    category: 'Product Launch'
+                }
+            ];
+
+            function performSearch(query, filter = 'all') {
+                if (!query.trim()) {
+                    searchResults.innerHTML = '<div class="no-results"><h3>Start typing to search...</h3><p>Search through blog posts, projects, and news articles.</p></div>';
+                    return;
+                }
+
+                const filtered = allContent.filter(item => {
+                    const matchesQuery = item.title.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.excerpt.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.category.toLowerCase().includes(query.toLowerCase());
+                    const matchesFilter = filter === 'all' || item.type === filter;
+                    return matchesQuery && matchesFilter;
+                });
+
+                if (filtered.length === 0) {
+                    searchResults.innerHTML = '<div class="no-results"><h3>No results found</h3><p>Try different keywords or check your spelling.</p></div>';
+                    return;
+                }
+
+                const resultsHtml = filtered.map(item => `
+                    <a href="${item.url}" class="result-item">
+                        <h3 class="result-title">${item.title}</h3>
+                        <div class="result-meta">${item.category} • ${item.date}</div>
+                        <p class="result-excerpt">${item.excerpt}</p>
+                    </a>
+                `).join('');
+
+                searchResults.innerHTML = resultsHtml;
+            }
+
+            searchInput.addEventListener('input', function() {
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                performSearch(this.value, activeFilter);
+            });
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    performSearch(searchInput.value, this.dataset.filter);
+                });
+            });
+
+            // Initial state
+            performSearch('');
+        });
+    </script>
+</body>
+</html>
+
+

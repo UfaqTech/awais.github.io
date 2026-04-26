@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Awais Nawaz - Creator, Developer & Lead at UfaqTech</title>
+    <meta name="description" content="Explore innovative web development projects and case studies from Awais Nawaz, Creator, Developer & Lead at UfaqTech." />
+    <meta name="keywords" content="projects, web development, UfaqTech, Awais Nawaz, portfolio, case studies" />
+    <link rel="canonical" href="https://ufaqtech.github.io/awais.github.io/projects/" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Projects | Awais Nawaz - Creator, Developer & Lead at UfaqTech" />
+    <meta property="og:description" content="Explore innovative web development projects and case studies from Awais Nawaz, Creator, Developer & Lead at UfaqTech." />
+    <meta property="og:url" content="https://ufaqtech.github.io/awais.github.io/projects/" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .projects-header { padding: 100px 0 var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%); }
+        .filter-buttons { display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-2xl); justify-content: center; }
+        .filter-btn { padding: 0.5rem 1.5rem; border: 2px solid var(--primary); background: transparent; color: var(--primary); border-radius: var(--radius-full); cursor: pointer; transition: all 0.3s ease; font-weight: 600; }
+        .filter-btn.active { background: var(--primary); color: var(--darker); }
+        .filter-btn:hover { background: rgba(0, 212, 255, 0.1); }
+        .featured-badge { position: absolute; top: 1rem; right: 1rem; background: var(--gradient-primary); color: var(--darker); padding: 0.5rem 1rem; border-radius: var(--radius-md); font-weight: 700; font-size: 0.75rem; }
+        .tech-tag { display: inline-block; padding: 0.3rem 0.8rem; background: rgba(0, 212, 255, 0.1); color: var(--primary); border: 1px solid var(--primary); border-radius: var(--radius-md); font-size: 0.75rem; margin-right: 0.5rem; margin-bottom: 0.5rem; }
+        .status-badge { font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: var(--radius-full); }
+        .status-completed { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        .status-ongoing { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li class="nav-dropdown"><a href="#">About</a><ul class="dropdown-menu"><li><a href="../pages/about.html">About Me</a></li><li><a href="../pages/skills.html">Skills</a></li></ul></li>
+                <li class="nav-dropdown"><a href="#">Work</a><ul class="dropdown-menu"><li><a href="./" class="active">Projects</a></li><li><a href="../portfolio.html">Portfolio</a></li></ul></li>
+                <li class="nav-dropdown"><a href="#">Content</a><ul class="dropdown-menu"><li><a href="../blog/">Blog</a></li><li><a href="../news/">News</a></li></ul></li>
+                <li><a href="../links/">Links</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="projects-header">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">My Work</span>
+                <h1>Featured Projects</h1>
+                <p class="description">Explore my latest work in web development, mobile apps, and innovative digital solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FILTERS -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="Web Application">Web Application</button>
+                <button class="filter-btn" data-filter="Mobile Development">Mobile Development</button>
+                <button class="filter-btn" data-filter="Web Design & Development">Design & Dev</button>
+            </div>
+
+            <!-- PROJECTS GRID -->
+            <div class="grid grid-3" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(168, 85, 247, 0.1));">
+        <div class="container text-center">
+            <h2>Have a Project in Mind?</h2>
+            <p style="margin: var(--spacing-lg) 0;">Let's collaborate and bring your ideas to life</p>
+            <a href="../pages/contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Awais Nawaz</h3>
+                    <p>Creator, Developer & Lead at UfaqTech</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="./">Projects</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="../pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../pages/terms.html">Terms</a></li>
+                        <li><a href="../sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Workflow - Awais Nawaz | Development Process</title>
+    <link rel="canonical">
+    <link rel="manifest">
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" /> href="/manifest.json" /> href="https://ufaqtech.github.io/awais.github.io/pages/workflow.html" />
+    <meta name="description" content="Learn about my development workflow and process for building modern web applications." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .workflow-step { position: relative; padding: var(--spacing-lg); margin: var(--spacing-lg) 0; background: rgba(30, 41, 59, 0.5); border: 2px solid rgba(0, 212, 255, 0.2); border-radius: var(--radius-md); transition: all 0.3s ease; }
+        .workflow-step.highlight { background: rgba(0, 212, 255, 0.1); border-color: var(--primary); }
+        .step-icon { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: rgba(0, 212, 255, 0.2); border: 2px solid var(--primary); border-radius: 50%; margin-right: var(--spacing-md); margin-bottom: var(--spacing-md); font-size: 1.5rem; position: relative; }
+        .step-number { position: absolute; bottom: -5px; right: -5px; background: var(--primary); color: var(--darker); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; font-size: 0.9rem; }
+        .step-title { color: var(--primary); margin: var(--spacing-md) 0 var(--spacing-sm); }
+        .step-details { list-style: none; padding: 0; margin: var(--spacing-md) 0; }
+        .step-details li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; }
+        .step-details li::before { content: "→"; position: absolute; left: 0; color: var(--primary); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="workflow.html" class="active">Workflow</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section style="padding: 100px var(--spacing-md) var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%);">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Process</span>
+                <h1 class="animate-fade">My Development Workflow</h1>
+                <p class="description animate-fade delay-200">A systematic approach to building high-quality, innovative digital solutions from concept to launch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW STEPS -->
+    <section class="section">
+        <div class="container">
+            <div id="workflowSteps">
+                <p class="text-center">Loading workflow...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- METHODOLOGY DETAILS -->
+    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Methodology & Principles</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card" data-animate>
+                    <h3 style="color: var(--primary);">Agile Development</h3>
+                    <p>I follow agile methodologies with iterative development, continuous integration, and regular feedback loops to ensure flexibility and rapid delivery.</p>
+                </div>
+                <div class="card" data-animate>
+                    <h3 style="color: var(--primary);">Quality Assurance</h3>
+                    <p>Comprehensive testing including unit tests, integration tests, and user acceptance testing ensures robust and reliable applications.</p>
+                </div>
+                <div class="card" data-animate>
+                    <h3 style="color: var(--primary);">User-Centric Design</h3>
+                    <p>Every decision is guided by user needs and feedback. I prioritize excellent UX and maintain focus on solving real problems.</p>
+                </div>
+                <div class="card" data-animate>
+                    <h3 style="color: var(--primary);">Performance & Scalability</h3>
+                    <p>Building for performance and scalability from the start ensures applications can grow and adapt to future demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tools & Technologies</h2>
+            </div>
+            <div class="grid grid-4">
+                <div class="card text-center" data-animate>
+                    <p style="font-size: 2rem; margin-bottom: var(--spacing-md);">⚙️</p>
+                    <h4>Development</h4>
+                    <p style="font-size: 0.9rem;">React, Vue, Node.js, TypeScript</p>
+                </div>
+                <div class="card text-center" data-animate>
+                    <p style="font-size: 2rem; margin-bottom: var(--spacing-md);">🗄️</p>
+                    <h4>Databases</h4>
+                    <p style="font-size: 0.9rem;">PostgreSQL, MongoDB, Firebase</p>
+                </div>
+                <div class="card text-center" data-animate>
+                    <p style="font-size: 2rem; margin-bottom: var(--spacing-md);">🚀</p>
+                    <h4>Deployment</h4>
+                    <p style="font-size: 0.9rem;">Docker, AWS, Vercel, CI/CD</p>
+                </div>
+                <div class="card text-center" data-animate>
+                    <p style="font-size: 2rem; margin-bottom: var(--spacing-md);">🧪</p>
+                    <h4>Testing</h4>
+                    <p style="font-size: 0.9rem;">Jest, Cypress, Playwright</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/workflow.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Discovery & Research",
+    "description": "In-depth analysis of requirements, market research, and user needs to establish project foundation and goals.",
+    "icon": "🔍",
+    "details": [
+      "Stakeholder interviews",
+      "Market analysis",
+      "User research",
+      "Competitive analysis",
+      "Requirements documentation"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Strategy & Planning",
+    "description": "Development of comprehensive strategy, roadmap creation, and resource allocation for project execution.",
+    "icon": "📋",
+    "details": [
+      "Strategic planning",
+      "Roadmap creation",
+      "Timeline estimation",
+      "Resource allocation",
+      "Risk assessment"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Design & Prototyping",
+    "description": "Creation of wireframes, mockups, and interactive prototypes to visualize the solution and gather feedback.",
+    "icon": "🎨",
+    "details": [
+      "Wireframing",
+      "Visual design",
+      "Prototyping",
+      "User testing",
+      "Iteration & refinement"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Development",
+    "description": "Agile development process with continuous integration, testing, and deployment of features.",
+    "icon": "💻",
+    "details": [
+      "Frontend development",
+      "Backend development",
+      "API integration",
+      "Database design",
+      "Quality assurance"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Testing & QA",
+    "description": "Comprehensive testing including unit tests, integration tests, and user acceptance testing to ensure quality.",
+    "icon": "✅",
+    "details": [
+      "Unit testing",
+      "Integration testing",
+      "User acceptance testing",
+      "Bug tracking",
+      "Performance optimization"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Deployment & Launch",
+    "description": "Preparation for launch, deployment to production, and monitoring for issues and user feedback.",
+    "icon": "🚀",
+    "details": [
+      "Deployment planning",
+      "Production setup",
+      "Launch coordination",
+      "Monitoring",
+      "Support & maintenance"
+    ]
+  }
+]

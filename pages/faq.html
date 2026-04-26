@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Awais Nawaz | Frequently Asked Questions</title>
+    <link rel="canonical">
+    <link rel="manifest">
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" /> href="/manifest.json" /> href="https://ufaqtech.github.io/awais.github.io/pages/faq.html" />
+    <meta name="description" content="Frequently asked questions about my services, process, and how I can help." />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section style="padding: 100px var(--spacing-md) var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%);">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="animate-fade">FAQ</h1>
+                <p class="description animate-fade delay-200">Answers to commonly asked questions about my services and process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What services do you offer?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>I offer comprehensive web development services including full-stack development, UI/UX design, mobile app development, AI integration, technical consulting, and performance optimization.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What is your typical project timeline?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Project timelines vary depending on scope and complexity. Typically, a small project takes 2-4 weeks, medium projects 2-3 months, and larger projects 3-6 months. I'll provide a detailed timeline after the discovery phase.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>How do you handle project communication?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>I maintain regular communication through scheduled calls, email updates, and project management tools. You'll have complete visibility into your project's progress at all times.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Do you provide support after launch?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Yes, I offer ongoing support and maintenance packages. We can discuss options that fit your needs, whether it's bug fixes, updates, or new features.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What technologies do you work with?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>I specialize in modern tech stacks including React, Vue.js, Node.js, Python, PostgreSQL, MongoDB, AWS, Docker, and more. I can also work with other technologies based on project requirements.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>How do you approach mobile app development?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>I use React Native for cross-platform development to build apps for both iOS and Android from a single codebase. This approach ensures consistency and faster development.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>Can you help with existing projects?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Absolutely! I can help with code reviews, performance optimization, bug fixes, feature additions, or complete redesigns of existing projects.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What is your pricing model?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-body">
+                    <p>Pricing depends on project scope, complexity, and duration. I offer fixed-price projects, hourly rates, and retainer arrangements. Let's discuss what works best for your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+

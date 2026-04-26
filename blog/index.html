@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Awais Nawaz - Creator, Developer & Lead at UfaqTech</title>
+    <meta name="description" content="Latest blog posts from Awais Nawaz, Creator, Developer & Lead at UfaqTech on web development, technology trends, and industry insights." />
+    <meta name="keywords" content="blog, web development, UfaqTech, Awais Nawaz, articles, technology" />
+    <link rel="canonical" href="https://ufaqtech.github.io/awais.github.io/blog/" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00d4ff" />`n    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Blog | Awais Nawaz - Creator, Developer & Lead at UfaqTech" />
+    <meta property="og:description" content="Latest blog posts from Awais Nawaz, Creator, Developer & Lead at UfaqTech on web development, technology trends, and industry insights." />
+    <meta property="og:url" content="https://ufaqtech.github.io/awais.github.io/blog/" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <style>
+        .blog-header { padding: 100px 0 var(--spacing-2xl); background: linear-gradient(135deg, var(--darker) 0%, #1a1f35 100%); }
+        .search-box { margin: var(--spacing-2xl) 0; display: flex; gap: var(--spacing-md); }
+        .search-box input { flex: 1; padding: var(--spacing-md); background: rgba(30, 41, 59, 0.5); border: 2px solid rgba(0, 212, 255, 0.2); border-radius: var(--radius-md); color: white; font-size: 1rem; }
+        .filter-buttons { display: flex; gap: var(--spacing-md); flex-wrap: wrap; margin-bottom: var(--spacing-2xl); }
+        .filter-btn { padding: 0.5rem 1.5rem; border: 2px solid var(--primary); background: transparent; color: var(--primary); border-radius: var(--radius-full); cursor: pointer; transition: all 0.3s ease; font-weight: 600; }
+        .filter-btn.active { background: var(--primary); color: var(--darker); }
+        .card-meta { display: flex; gap: 1rem; align-items: center; font-size: 0.9rem; margin-bottom: var(--spacing-md); }
+        .read-time { color: var(--gray); }
+        .blog-author { display: flex; justify-content: space-between; align-items: center; padding-top: var(--spacing-md); border-top: 1px solid rgba(0, 212, 255, 0.1); }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo"><span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UfaqTech</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li class="nav-dropdown"><a href="#">About</a><ul class="dropdown-menu"><li><a href="../pages/about.html">About Me</a></li></ul></li>
+                <li class="nav-dropdown"><a href="#">Work</a><ul class="dropdown-menu"><li><a href="../projects/">Projects</a></li></ul></li>
+                <li class="nav-dropdown"><a href="#">Content</a><ul class="dropdown-menu"><li><a href="./" class="active">Blog</a></li><li><a href="../news/">News</a></li></ul></li>
+                <li><a href="../links/">Links</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="blog-header">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Insights & Knowledge</span>
+                <h1>My Blog</h1>
+                <p class="description">Articles about web development, technology, and programming best practices</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH & FILTERS -->
+    <section class="section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="blogSearch" placeholder="Search blog posts..." />
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter-blog="all">All Posts</button>
+                <button class="filter-btn" data-filter-blog="Web Development">Web Development</button>
+                <button class="filter-btn" data-filter-blog="React">React</button>
+                <button class="filter-btn" data-filter-blog="Backend">Backend</button>
+                <button class="filter-btn" data-filter-blog="CSS">CSS</button>
+                <button class="filter-btn" data-filter-blog="TypeScript">TypeScript</button>
+            </div>
+
+            <!-- BLOGS GRID -->
+            <div class="grid grid-3" id="blogsGrid"></div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(0, 212, 255, 0.1));">
+        <div class="container text-center">
+            <h2>Subscribe to Updates</h2>
+            <p style="margin: var(--spacing-lg) 0;">Get the latest articles delivered to your inbox</p>
+            <form style="display: flex; gap: var(--spacing-md); max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Your email" required style="flex: 1; padding: 0.75rem; background: rgba(30, 41, 59, 0.5); border: 2px solid var(--primary); border-radius: var(--radius-md); color: white;" />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Awais Nawaz</h3>
+                    <p>Creator, Developer & Lead</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="./">Blog</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 UfaqTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>
+
+
+

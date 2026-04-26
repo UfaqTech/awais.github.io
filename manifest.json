@@ -1,0 +1,16 @@
+{
+  "name": "UfaqTech Portfolio",
+  "short_name": "UfaqTech",
+  "description": "Professional web developer portfolio showcasing projects, skills, and services",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#00d4ff",
+  "background_color": "#030712",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
