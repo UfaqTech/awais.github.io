@@ -18,12 +18,36 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load blogs from JSON
 async function loadBlogs() {
   try {
-    const response = await fetch('/data/blogs.json');
+    const response = await fetch('../data/blogs.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     blogsData = await response.json();
     filteredBlogs = blogsData;
   } catch (error) {
     console.error('Error loading blogs:', error);
+    displayBlogError(error);
   }
+}
+
+// Display error message when blogs fail to load
+function displayBlogError(error) {
+  const blogsGrid = document.getElementById('blogsGrid');
+  if (!blogsGrid) return;
+  
+  blogsGrid.innerHTML = `
+    <div style="grid-column: 1/-1; text-align: center; padding: 2rem;">
+      <p style="color: #ff6b6b; font-size: 1.1rem; margin-bottom: 1rem;">
+        ⚠️ Unable to load blog posts
+      </p>
+      <p style="color: #999; font-size: 0.95rem;">
+        There was an error loading the blog content. Please try refreshing the page or contact support if the problem persists.
+      </p>
+      <p style="color: #666; font-size: 0.85rem; margin-top: 1rem;">
+        Error details: ${error.message}
+      </p>
+    </div>
+  `;
 }
 
 // Display blog posts

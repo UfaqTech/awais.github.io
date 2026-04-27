@@ -16,11 +16,35 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load workflow from JSON
 async function loadWorkflow() {
   try {
-    const response = await fetch('/data/workflow.json');
+    const response = await fetch('../data/workflow.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     workflowData = await response.json();
   } catch (error) {
     console.error('Error loading workflow:', error);
+    displayWorkflowError(error);
   }
+}
+
+// Display error message when workflow fails to load
+function displayWorkflowError(error) {
+  const workflowContainer = document.getElementById('workflowSteps');
+  if (!workflowContainer) return;
+  
+  workflowContainer.innerHTML = `
+    <div style="grid-column: 1/-1; text-align: center; padding: 2rem;">
+      <p style="color: #ff6b6b; font-size: 1.1rem; margin-bottom: 1rem;">
+        ⚠️ Unable to load workflow steps
+      </p>
+      <p style="color: #999; font-size: 0.95rem;">
+        There was an error loading the workflow content. Please try refreshing the page or contact support if the problem persists.
+      </p>
+      <p style="color: #666; font-size: 0.85rem; margin-top: 1rem;">
+        Error details: ${error.message}
+      </p>
+    </div>
+  `;
 }
 
 // Display workflow steps

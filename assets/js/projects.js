@@ -18,12 +18,36 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load projects from JSON
 async function loadProjects() {
   try {
-    const response = await fetch('/data/projects.json');
+    const response = await fetch('../data/projects.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     projectsData = await response.json();
     filteredProjects = projectsData;
   } catch (error) {
     console.error('Error loading projects:', error);
+    displayProjectsError(error);
   }
+}
+
+// Display error message when projects fail to load
+function displayProjectsError(error) {
+  const projectsGrid = document.getElementById('projectsGrid');
+  if (!projectsGrid) return;
+  
+  projectsGrid.innerHTML = `
+    <div style="grid-column: 1/-1; text-align: center; padding: 2rem;">
+      <p style="color: #ff6b6b; font-size: 1.1rem; margin-bottom: 1rem;">
+        ⚠️ Unable to load projects
+      </p>
+      <p style="color: #999; font-size: 0.95rem;">
+        There was an error loading the projects content. Please try refreshing the page or contact support if the problem persists.
+      </p>
+      <p style="color: #666; font-size: 0.85rem; margin-top: 1rem;">
+        Error details: ${error.message}
+      </p>
+    </div>
+  `;
 }
 
 // Display projects in grid
