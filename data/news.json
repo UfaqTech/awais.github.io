@@ -9,7 +9,7 @@
     "thumbnail": "https://picsum.photos/300/200?random=20",
     "excerpt": "Introducing our latest innovation: an AI-powered development suite that revolutionizes code generation.",
     "content": "We are excited to announce the launch of UfaqTech's AI-Driven Development Suite, a comprehensive platform designed to accelerate development cycles and improve code quality through intelligent automation.",
-    "link": "news/update-1.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/news/update-1.html"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "thumbnail": "https://picsum.photos/300/200?random=21",
     "excerpt": "Celebrating recognition for contributions to the tech industry and innovation.",
     "content": "Awais Nawaz has been recognized as Tech Innovator of the Year for his groundbreaking work in AI and web development, leading UfaqTech's mission to transform how technology is built.",
-    "link": "news/update-2.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/news/update-2.html"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "thumbnail": "https://picsum.photos/300/200?random=22",
     "excerpt": "Strategic partnership to expand global reach and accelerate innovation.",
     "content": "UfaqTech has joined the Global Tech Alliance, a consortium of leading technology companies dedicated to advancing innovation and promoting best practices across the industry.",
-    "link": "news/update-3.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/news/update-3.html"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "thumbnail": "https://picsum.photos/300/200?random=23",
     "excerpt": "Launching an in-depth blog series covering advanced development techniques and architectural patterns.",
     "content": "Starting this week, we launch a comprehensive blog series featuring advanced development techniques, real-world case studies, and architectural patterns used in modern applications.",
-    "link": "news/update-4.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/news/update-4.html"
   },
   {
     "id": 5,
@@ -57,6 +57,6 @@
     "thumbnail": "https://picsum.photos/300/200?random=24",
     "excerpt": "Celebrating our growing community of developers, designers, and tech enthusiasts.",
     "content": "The UfaqTech community has grown to 50,000 active members worldwide. This milestone represents our commitment to fostering a collaborative environment for learning and innovation.",
-    "link": "news/update-5.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/news/update-5.html"
   }
 ]

@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Portfolio",
     "description": "View my latest projects and case studies",
-    "url": "/portfolio.html",
+    "url": "https://ufaqtech.github.io",
     "icon": "🎯",
     "color": "#00d4ff",
     "featured": true
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Blog",
     "description": "Read articles about web development and technology",
-    "url": "/blog/",
+    "url": "https://ufaqtech.github.io/awais.github.io/blog/",
     "icon": "📝",
     "color": "#a855f7",
     "featured": true
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Projects",
     "description": "Explore my featured projects and case studies",
-    "url": "/projects/",
+    "url": "https://ufaqtech.github.io/awais.github.io/projects/",
     "icon": "💼",
     "color": "#ec4899",
     "featured": true
@@ -30,7 +30,7 @@
     "id": 4,
     "title": "GitHub",
     "description": "Check out my code on GitHub",
-    "url": "https://github.com",
+    "url": "https://github.com/ufaqtech",
     "icon": "🐙",
     "color": "#f1f5f9",
     "featured": true
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "LinkedIn",
     "description": "Connect with me on LinkedIn",
-    "url": "https://linkedin.com",
+    "url": "https://www.linkedin.com/in/ufaqtech/",
     "icon": "💼",
     "color": "#0a66c2",
     "featured": true
@@ -48,7 +48,7 @@
     "id": 6,
     "title": "Twitter",
     "description": "Follow me for updates and insights",
-    "url": "https://twitter.com",
+    "url": "https://twitter.com/ufaqtech",
     "icon": "𝕏",
     "color": "#000000",
     "featured": true
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Email",
     "description": "Send me an email directly",
-    "url": "mailto:hello@awaisnawaz.com",
+    "url": "mailto:ufaqtech.global@gmail.com",
     "icon": "✉️",
     "color": "#00d4ff",
     "featured": false
@@ -66,7 +66,7 @@
     "id": 8,
     "title": "Dribbble",
     "description": "View my design work on Dribbble",
-    "url": "https://dribbble.com",
+    "url": "https://dribbble.com/ufaqtech",
     "icon": "🎨",
     "color": "#ea4c89",
     "featured": false
@@ -75,7 +75,7 @@
     "id": 9,
     "title": "YouTube",
     "description": "Watch my tutorials and content",
-    "url": "https://youtube.com",
+    "url": "https://youtube.com/ufaqtech",
     "icon": "▶️",
     "color": "#ff0000",
     "featured": false
@@ -84,7 +84,7 @@
     "id": 10,
     "title": "CodePen",
     "description": "Check out my code experiments",
-    "url": "https://codepen.io",
+    "url": "https://codepen.io/ufaqtech",
     "icon": "⚙️",
     "color": "#000000",
     "featured": false
@@ -102,7 +102,7 @@
     "id": 12,
     "title": "UfaqTech",
     "description": "Learn about UfaqTech and our products",
-    "url": "https://ufaqtech.com",
+    "url": "https://ufaqtech.github.io/awais.github.io/",
     "icon": "🚀",
     "color": "#a855f7",
     "featured": true

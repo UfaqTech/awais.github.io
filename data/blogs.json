@@ -12,7 +12,7 @@
     "content": "Web development continues to evolve at a rapid pace. In this article, we explore emerging technologies like AI integration, serverless architecture, and edge computing that are transforming how we build web applications.",
     "readTime": "5 min",
     "featured": true,
-    "link": "blog/post-1.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/blog/post-1.html"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "content": "React Hooks have revolutionized the way we write functional components. Learn about useState, useEffect, useContext, and how to create custom hooks to optimize your React applications.",
     "readTime": "8 min",
     "featured": true,
-    "link": "blog/post-2.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/blog/post-2.html"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
     "content": "Building scalable APIs is crucial for modern web applications. Discover best practices for error handling, database optimization, caching strategies, and deployment considerations.",
     "readTime": "10 min",
     "featured": false,
-    "link": "blog/post-3.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/blog/post-3.html"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
     "content": "CSS Grid and Flexbox are powerful layout tools. In this comprehensive guide, we compare their features, use cases, and demonstrate practical examples for modern responsive designs.",
     "readTime": "7 min",
     "featured": false,
-    "link": "blog/post-4.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/blog/post-4.html"
   },
   {
     "id": 5,
@@ -72,6 +72,6 @@
     "content": "TypeScript brings static typing and powerful tooling to JavaScript. Explore best practices for type definitions, interfaces, generics, and architectural patterns for large-scale projects.",
     "readTime": "12 min",
     "featured": false,
-    "link": "blog/post-5.html"
+    "link": "https://ufaqtech.github.io/awais.github.io/blog/post-5.html"
   }
 ]

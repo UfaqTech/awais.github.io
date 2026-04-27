@@ -36,7 +36,7 @@
       "worksFor": {
         "@type": "Organization",
         "name": "UfaqTech",
-        "url": "https://ufaqtech.com"
+        "url": "https://ufaqtech.github.io/"
       }
     }
     </script>
@@ -62,7 +62,7 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="/awais.github.io/" class="navbar-logo animate-pulse">
+            <a href="#" class="navbar-logo animate-pulse">
                 <span style="background: var(--gradient-neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AN</span>
             </a>
             <ul class="nav-links">
@@ -324,7 +324,7 @@
                 <div class="footer-section">
                     <h3>UfaqTech</h3>
                     <ul>
-                        <li><a href="https://ufaqtech.com"><i class="fas fa-external-link-alt"></i>Official Website</a></li>
+                        <li><a href="https://ufaqtech.github.io/"><i class="fas fa-external-link-alt"></i>Official Website</a></li>
                         <li><a href="pages/services.html"><i class="fas fa-laptop-code"></i>Services</a></li>
                         <li><a href="pages/workflow.html"><i class="fas fa-project-diagram"></i>Our Workflow</a></li>
                         <li><a href="links/"><i class="fas fa-link"></i>More Links</a></li>
@@ -355,7 +355,7 @@
         // Load featured projects
         async function loadFeaturedProjects() {
             try {
-                const response = await fetch('/data/projects.json');
+                const response = await fetch('data/projects.json');
                 const projects = await response.json();
                 const featured = projects.filter(p => p.featured).slice(0, 3);
                 const container = document.getElementById('featuredProjects');
@@ -383,7 +383,7 @@
         // Load featured blog posts
         async function loadFeaturedBlog() {
             try {
-                const response = await fetch('/data/blogs.json');
+                const response = await fetch('data/blogs.json');
                 const blogs = await response.json();
                 const featured = blogs.filter(b => b.featured).slice(0, 3);
                 const container = document.getElementById('featuredBlog');
@@ -411,7 +411,7 @@
         // Load latest news
         async function loadLatestNews() {
             try {
-                const response = await fetch('/data/news.json');
+                const response = await fetch('data/news.json');
                 const news = await response.json();
                 const latest = news.slice(0, 3);
                 const container = document.getElementById('latestNews');

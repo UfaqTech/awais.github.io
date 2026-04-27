@@ -7,7 +7,7 @@
     "image": "https://picsum.photos/600/400?random=1",
     "thumbnail": "https://picsum.photos/300/200?random=1",
     "technologies": ["React", "Node.js", "TensorFlow", "MongoDB"],
-    "link": "projects/project-1.html",
+    "link": "https://ufaqtech.github.io/awais.github.io/projects/project-1.html",
     "featured": true,
     "date": "2024-01-15",
     "status": "Completed"
@@ -20,7 +20,7 @@
     "image": "https://picsum.photos/600/400?random=2",
     "thumbnail": "https://picsum.photos/300/200?random=2",
     "technologies": ["React Native", "Firebase", "Machine Learning"],
-    "link": "projects/project-2.html",
+    "link": "https://ufaqtech.github.io/awais.github.io/projects/project-2.html",
     "featured": true,
     "date": "2023-12-20",
     "status": "Completed"
@@ -33,7 +33,7 @@
     "image": "https://picsum.photos/600/400?random=3",
     "thumbnail": "https://picsum.photos/300/200?random=3",
     "technologies": ["Next.js", "Tailwind CSS", "Stripe API", "PostgreSQL"],
-    "link": "projects/project-3.html",
+    "link": "https://ufaqtech.github.io/awais.github.io/projects/project-3.html",
     "featured": false,
     "date": "2023-11-10",
     "status": "Completed"
@@ -46,7 +46,7 @@
     "image": "https://picsum.photos/600/400?random=4",
     "thumbnail": "https://picsum.photos/300/200?random=4",
     "technologies": ["Vue.js", "WebSocket", "FFmpeg", "Redis"],
-    "link": "projects/project-4.html",
+    "link": "https://ufaqtech.github.io/awais.github.io/projects/project-4.html",
     "featured": true,
     "date": "2023-10-05",
     "status": "Ongoing"
@@ -59,7 +59,7 @@
     "image": "https://picsum.photos/600/400?random=5",
     "thumbnail": "https://picsum.photos/300/200?random=5",
     "technologies": ["Angular", "Python", "MQTT", "InfluxDB"],
-    "link": "projects/project-5.html",
+    "link": "https://ufaqtech.github.io/awais.github.io/projects/project-5.html",
     "featured": false,
     "date": "2023-09-18",
     "status": "Completed"
